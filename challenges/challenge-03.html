@@ -31,34 +31,43 @@
   
     .container {
       /* display grid */
-  
+      display: grid;
       /* Define template columns */
-  
+      grid-template-columns: 1fr 1fr 1fr;
       /* Define a gap */
-  
+      grid-gap: 1rem;
       /* Define grid template areas */
-  
+      grid-template-areas: "h h h h"
+                           "s m m m"
+                           "s m m m"
+                           "s n n n"
+                           "f f f f";
     }
   
     /* Assign each of the boxes below to a grid area */
   
     .a {
+      grid-area: h;
       background-color: #d45353;
     }
   
     .b {
+      grid-area: s;
       background-color: #eae55e;
     }
   
     .c {
+      grid-area: m;
       background-color: #65d451;
     }
   
     .d {
+      grid-area: n;
       background-color: #86b9f5;
     }
   
     .e {
+      grid-area: f;
       background-color: #cf86f5;
     }
   
